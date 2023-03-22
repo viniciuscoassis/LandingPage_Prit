@@ -29,14 +29,15 @@ export default function Section3() {
 const Wrapper = styled.div`
   background-color: #201d4d;
   color: white;
+  font-size: 18px;
   padding: 30px 20px;
-  height: 20vh;
+  height: 25vh;
   display: flex;
   flex-direction: column;
   .header {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   h1 {
     font-size: 22px;
@@ -45,7 +46,9 @@ const Wrapper = styled.div`
   }
   ul {
     li {
-      margin-bottom: 15px;
+      :not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
   }
 `;
