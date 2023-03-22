@@ -101,4 +101,11 @@ const Wrapper = styled.div`
     color: #39adc4;
     font-size: 20px;
   }
+  @media (max-width: 600px) {
+    padding: 10px;
+    height: 100vh;
+    .body {
+      margin-bottom: 70px;
+    }
+  }
 `;
