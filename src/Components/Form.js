@@ -20,9 +20,9 @@ export default function Form() {
       <label>Nome para contato*</label>
       <input name="name" value={form.name} onChange={handleForm}></input>
       <label>E-mail*</label>
-      <input name="name" value={form.email} onChange={handleForm}></input>
+      <input name="email" value={form.email} onChange={handleForm}></input>
       <label>Número de telefone do WhatsApp (DDD) 99999-9999*</label>
-      <input name="name" value={form.phone} onChange={handleForm}></input>
+      <input name="phone" value={form.phone} onChange={handleForm}></input>
       <Button type="submit">Me cadastrar e entrar no grupo!</Button>
     </Wrapper>
   );
@@ -31,7 +31,7 @@ const Button = styled(styledButton)``;
 
 const Wrapper = styled.form`
   position: absolute;
-  right: 22%;
+  right: 20%;
   top: 20%;
   background-color: #39adc4;
   display: flex;
@@ -61,7 +61,7 @@ const Wrapper = styled.form`
       box-shadow: none;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     position: initial;
     width: 100%;
     margin: 0 auto;

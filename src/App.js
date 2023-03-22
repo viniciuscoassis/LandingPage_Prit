@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Footer from "./Components/Footer";
 import Form from "./Components/Form";
@@ -7,6 +8,14 @@ import Section2 from "./Components/Section2";
 import Section3 from "./Components/Section3";
 
 function App() {
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [scroll]);
+
+  const Scroll = () => {
+    setScroll(!scroll);
+  };
   return (
     <Wrapper>
       <Header>
@@ -14,9 +23,9 @@ function App() {
         <Form id="desktopForm" />
       </Header>{" "}
       <div className="body">
-        <Section1 />
+        <Section1 Scroll={Scroll} />
 
-        <Section2 />
+        <Section2 Scroll={Scroll} />
         <Section3 />
       </div>
       <Footer />

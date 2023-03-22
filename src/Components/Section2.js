@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import celular from "../assets/img/celular.png";
 import { styledButton } from "../Styles";
-export default function Section2() {
+export default function Section2({ Scroll }) {
   return (
     <Wrapper>
       <h1>O que você vai aprender na Live?</h1>
@@ -28,9 +28,7 @@ export default function Section2() {
           atendimento e pós venda
         </p>
       </div>
-      <Button onClick={() => window.scrollTo(0.0)}>
-        Quero participar da aula
-      </Button>
+      <Button onClick={() => Scroll()}>Quero participar da aula</Button>
     </Wrapper>
   );
 }
@@ -74,7 +72,7 @@ const Wrapper = styled.div`
       margin-bottom: 10px;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     padding: 20px;
     text-align: center;
     margin: 0 auto;

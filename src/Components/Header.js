@@ -39,7 +39,7 @@ const Wrapper = styled.div`
     font-size: 22px;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 1000px) {
     padding: 10px 20px;
     height: 120vh;
 

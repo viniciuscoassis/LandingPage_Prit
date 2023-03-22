@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { MdVerified } from "react-icons/md";
 import { styledButton } from "../Styles";
 
-export default function Section1() {
+export default function Section1({ Scroll }) {
   return (
     <Wrapper>
       <h1>
@@ -54,7 +54,7 @@ export default function Section1() {
       <div className="bottom">
         E se você se identificou com algum desses pontos, essa aula é pra você!
       </div>
-      <Button>Quero participar da aula</Button>
+      <Button onClick={()=>Scroll()}>Quero participar da aula</Button>
     </Wrapper>
   );
 }

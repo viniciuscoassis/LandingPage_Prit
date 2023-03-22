@@ -51,4 +51,7 @@ const Wrapper = styled.div`
       }
     }
   }
+  @media (max-width: 1000px) {
+    height: 120%;
+  }
 `;
