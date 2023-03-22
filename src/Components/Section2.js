@@ -38,7 +38,8 @@ export default function Section2() {
   );
 }
 const Button = styled(styledButton)`
-  margin-top: 70px;
+  width: 70%;
+  margin: 70px auto 0 auto;
 `;
 
 const Wrapper = styled.div`
@@ -67,7 +68,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     img {
-      width: 60%;
+      width: 70%;
       height: 100%;
     }
   }

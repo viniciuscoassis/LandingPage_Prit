@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MdVerified } from "react-icons/md";
+import { styledButton } from "../Styles";
 
 export default function Section1() {
   return (
@@ -12,21 +13,21 @@ export default function Section1() {
       <div className="body">
         <div>
           {" "}
-          <MdVerified color="#3E5CD2" />
+          <MdVerified color="#3E5CD2" size={20} />
           <p>
             Como começar e <strong>atrair mais clientes</strong>
           </p>
         </div>
         <div>
           {" "}
-          <MdVerified color="#3E5CD2" />
+          <MdVerified color="#3E5CD2" size={20} />
           <p>
             <strong>Fidelizar clientes</strong>
           </p>
         </div>
         <div>
           {" "}
-          <MdVerified color="#3E5CD2" />
+          <MdVerified color="#3E5CD2" size={30} />
           <p>
             <strong>Como se diferenciar</strong> e ser{" "}
             <strong>autoridade</strong> na sua cidade ou região
@@ -34,7 +35,7 @@ export default function Section1() {
         </div>
         <div>
           {" "}
-          <MdVerified color="#3E5CD2" />
+          <MdVerified color="#3E5CD2" size={30} />
           <p>
             As melhores práticas e quais{" "}
             <strong>estratégias aplicar no Instagram</strong>
@@ -42,7 +43,7 @@ export default function Section1() {
         </div>
         <div>
           {" "}
-          <MdVerified color="#3E5CD2" />{" "}
+          <MdVerified color="#3E5CD2" size={30} />{" "}
           <p>
             O que fazer para <strong>aumentar</strong> seu ticket médio e
             <strong> faturamento</strong>
@@ -53,32 +54,28 @@ export default function Section1() {
       <div className="bottom">
         E se você se identificou com algum desses pontos, essa aula é pra você!
       </div>
-      <button>Quero participar da aula</button>
+      <Button>Quero participar da aula</Button>
     </Wrapper>
   );
 }
+
+const Button = styled(styledButton)``;
+
 const Wrapper = styled.div`
   font-size: 18px;
   padding-right: 100px;
   color: #050533;
   font-weight: 600;
-  height: 80vh;
+  height: 90vh;
   background-color: #f1f1f1;
   padding: 10% 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  button {
-    height: 50px;
-    border: none;
-    background-color: #d37941;
-    font-size: 20px;
-    color: white;
-    font-weight: 500;
-  }
+  padding-right: 50%;
+
   h1 {
     font-size: 24px;
-    width: 50%;
     line-height: 30px;
   }
   .body {
@@ -91,6 +88,10 @@ const Wrapper = styled.div`
     div {
       display: flex;
       text-align: flex-start;
+      align-items: center;
+      :not(:last-child) {
+        margin-bottom: 20px;
+      }
       p {
         margin-left: 10px;
       }

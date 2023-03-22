@@ -27,6 +27,8 @@ const Wrapper = styled.div`
   justify-content: space-around;
   background-size: cover;
   background-position: center;
+  padding-right: 40%;
+
   h1 {
     font-size: 40px;
   }

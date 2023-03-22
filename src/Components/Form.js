@@ -9,4 +9,9 @@ export default function Form() {
     </Wrapper>
   );
 }
-const Wrapper = styled.form``;
+const Wrapper = styled.form`
+  position: absolute;
+  right: 0;
+  top: 20%;
+  background-color: red;
+`;
