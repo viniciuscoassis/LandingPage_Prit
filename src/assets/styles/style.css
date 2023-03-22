@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+* {
+  box-sizing: border-box;
+  transition: all ease .2s;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
