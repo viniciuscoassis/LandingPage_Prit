@@ -63,16 +63,16 @@ const Button = styled(styledButton)``;
 
 const Wrapper = styled.div`
   font-size: 18px;
-  padding-right: 100px;
   color: #050533;
   font-weight: 600;
   height: 90vh;
   background-color: #f1f1f1;
-  padding: 10% 5%;
+  padding: 5% 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-right: 50%;
+  padding-left: 20%;
 
   h1 {
     font-size: 24px;

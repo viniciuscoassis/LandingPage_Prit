@@ -40,6 +40,7 @@ export default function Section2() {
 const Button = styled(styledButton)`
   width: 70%;
   margin: 70px auto 0 auto;
+  height: 50px;
 `;
 
 const Wrapper = styled.div`
@@ -53,10 +54,12 @@ const Wrapper = styled.div`
 const Container = styled.div`
   background: linear-gradient(to bottom, #3aadc4, #8744cb);
   height: 100vh;
-  padding: 50px 30px;
+  padding: 50px 0;
   color: white;
   display: flex;
   flex-direction: column;
+  padding-left: 20%;
+
   h1 {
     font-weight: 500;
     font-size: 30px;
